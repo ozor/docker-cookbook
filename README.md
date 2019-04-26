@@ -10,6 +10,9 @@ docker pull ubuntu
 ```
 
 Эти команды продублированы в моём гисте: https://gist.github.com/ozor/b5dad4b74cbb61379f00779cfacacbd4
+
+#### Общие команды
+
 ```bash
 docker run ubuntu echo "Hello World"
 
