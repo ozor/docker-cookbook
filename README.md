@@ -305,4 +305,14 @@ docker service update --force --update-parallelism 1 --update-delay 30s nginx
 docker service update --update-parallelism 5--update-delay 2s --image instavote/vote:indent vote
 docker service update --limit-cpu 2 nginx
 docker service update --replicas=5 nginx
+
+# Команды получения информации о сервисе
+docker service logs someServiceName
+docker service inspect someServiceName
+docker service ps someServiceName
+
+# Неявный перезапуск сервиса (набор из 2 команд)
+docker service update someServiceName --replicas=0
+docker service update someServiceName --replicas=1
+
 ```
