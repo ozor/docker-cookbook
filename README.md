@@ -24,7 +24,7 @@ _**TODO**_
 
 ###  Кое-какие Docker команды
 
-Ниже небольшая сборка примеров. Всё дублируется из одноименных страниц Reference.
+Ниже небольшая сборка примеров. Всё дублируется из одноименных страниц Reference (_**TODO**_).
 
 ####  Меню этой страницы
 
@@ -60,6 +60,9 @@ docker diff 0077799fdbfa
 docker logs 0077799fdbfa
 ```
 
+[В Меню](#Меню-этой-страницы)
+
+
 #### Основные действия с контейнером
 
 ```bash
@@ -78,6 +81,8 @@ docker rm MyContainer
 # Обновление контейнера
 docker update --cpu-shares 512 -m 300M MyContainer
 ```
+
+[В Меню](#Меню-этой-страницы)
 
 #### Запуск и остановка контейнеров
 
@@ -110,6 +115,9 @@ docker kill -s HUP nginx
 docker attach nginx
 ```
 
+[В Меню](#Меню-этой-страницы)
+
+
 #### Получение информации о контейнерах
 
 ```bash
@@ -140,6 +148,9 @@ docker stats infinite
 # Изменения в файлах или директориях файловой системы контейнера
 docker diff infinite
 ```
+
+[В Меню](#Меню-этой-страницы)
+
 
 #### Управление образами
 
@@ -179,6 +190,9 @@ docker tag nginx eon01/nginx
 docker push eon01/nginx
 ```
 
+[В Меню](#Меню-этой-страницы)
+
+
 #### Сеть
 
 ```bash
@@ -213,6 +227,9 @@ docker run -it -d --network=MyOverlayNetwork nginx
 # Отключение контейнера от сети
 docker network disconnect MyOverlayNetwork nginx
 ```
+
+[В Меню](#Меню-этой-страницы)
+
 
 #### Очистка Docker
 
@@ -271,6 +288,9 @@ docker system prune
 docker system prune --volumes
 ```
 
+[В Меню](#Меню-этой-страницы)
+
+
 #### Реестры и репозитории Docker
 
 ```bash
@@ -294,6 +314,9 @@ docker pull eon01/nginx localhost:5000/myadmin/nginx
 docker push eon01/nginx
 docker push eon01/nginx localhost:5000/myadmin/nginx
 ```
+
+[В Меню](#Меню-этой-страницы)
+
 
 #### Docker Swarm
 
@@ -343,3 +366,5 @@ docker service update someServiceName --replicas=0
 docker service update someServiceName --replicas=1
 
 ```
+
+[В Меню](#Меню-этой-страницы)
